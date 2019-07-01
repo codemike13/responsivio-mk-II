@@ -5,16 +5,18 @@
 #main,
 #nav,
 #footer {
-  border: solid 1px black;
+  /* border: solid 1px black; */
 }
 html,
 body {
   height: 100%;
 }
 
+
 body {
   display: flex;
   flex-direction: column;
+    
 }
 #top {
   display: flex;
@@ -35,7 +37,7 @@ body {
   height: 700px;
   flex-direction: column;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
 }
 #nav {
   display: flex;
@@ -43,12 +45,18 @@ body {
   height: 700px;
   flex-direction: column;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
 }
 #main {
   display: flex;
   width: 80%;
   height: 700px;
+  /* background-image: url(assets/ads-pics/mike.png); */
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+    background-color: black;
+
 }
 /* INSIDE OF "app" <div> */
 
@@ -70,6 +78,11 @@ body {
   }
   #main {
     height: 750px;
+  /* background-image: url(assets/gifs/rave.jpeg); */
+    background-size: contain;
+     background-repeat: no-repeat;
+  background-position: center;
+    background-color: black;
   }
   #nav {
     transition: 2s;
@@ -124,6 +137,7 @@ body {
     display: none;
   }
   #app {
+    height: 98%;
     display: flex;
     flex-direction: column;
   }
@@ -140,7 +154,6 @@ body {
     height: 5%;
     flex-direction: row;
     flex-shrink: 0;
-    
   }
   #ads {
     order: 2;
@@ -149,6 +162,7 @@ body {
   #ads a {
     position: relative;
     transform: rotateZ(360deg);
+    padding-top: 6px;
     /* display: none; */
   }
 
@@ -162,8 +176,9 @@ body {
   #nav:hover a,
   #ads:hover a {
     transition: 1s;
-    padding-top:25px;
-    color:transparent;
+    padding-top: 25px;
+    color: transparent;
+    min-height: 10%;
   }
 
   /* #ads:hover {
@@ -171,28 +186,69 @@ body {
   #ads:hover a {
   } */
   #footer {
+    display: none;
     flex-shrink: 0;
   }
   /* internally change sytles via ids for each <a> tag  in ads section*/
   #ads:hover #suzuki {
-    background-image:url(/assets/ads-pics/suzuki.png);
-    background-size: 100% 100% ;
+    width: 15%;
+    transition: 1s;
+    background-image: url(/assets/ads-pics/suzuki.png);
+    background-size: 100% 100%;
   }
-   #ads:hover #makerbot{
-    background-image:url(/assets/ads-pics/MakerBot_logo.svg);
-    background-size: 100% 100% ;
+  #ads:hover #makerbot {
+    width: 15%;
+    transition: 1s;
+    background-image: url(/assets/ads-pics/MakerBot_logo.png);
+    background-size: 100% 100%;
   }
-  #ads:hover #arduino{
-    background-image:url(/assets/ads-pics/arduino_logo.png);
-    background-size: 100% 100% ;
+  #ads:hover #arduino {
+    width: 15%;
+    transition: 1s;
+    background-image: url(/assets/ads-pics/arduino_logo.png);
+    background-size: 100% 100%;
   }
-  #ads:hover #matthews{
-    background-image:url(/assets/ads-pics/MakerBot_logo.svg);
-    background-size: 100% 100% ;
+  #ads:hover #matthews {
+    width: 15%;
+    transition: 1s;
+    background-image: url(/assets/ads-pics/Mathews\Logo.png);
+    background-size: 100% 100%;
   }
-  #ads:hover #vans{
-    background-image:url(/assets/ads-pics/MakerBot_logo.svg);
-    background-size: 100% 100% ;
+  #ads:hover #vans {
+    width: 15%;
+    transition: 1s;
+    background-image: url(/assets/ads-pics/Vans_\(brand\)_logo.png);
+    background-size: 100% 100%;
+  }
+
+  /* internally change sytles via ids for each <a> tag  in nav section*/
+  #nav:hover #work {
+    border-radius: 5px;
+    width: 15%;
+    transition: 1s;
+    background-image: url(assets/gifs/navy.gif);
+    background-size: 100% 100%;
+  }
+  #nav:hover #projects {
+    border-radius: 5px;
+    width: 15%;
+    transition: 1s;
+    background-image: url(assets/gifs/hobbies.gif);
+    background-size: 100% 100%;
+  }
+  #nav:hover #gallery {
+    border-radius: 5px;
+    width: 15%;
+    transition: 1s;
+    background-image: url(assets/gifs/navy.gif);
+    background-size: 100% 100%;
+  }
+  #nav:hover #edu {
+    border-radius: 5px;
+    width: 15%;
+    transition: 1s;
+    background-image: url(assets/gifs/edu.gif);
+    background-size: 100% 100%;
   }
 }
 /* //////////////////////////////////////// */
